@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "likes": 6,
+        "deslikes": 3,
+        "nome": "Pizzaria North",
+        "categoria": "Restaurante",
+        "endereço": "Praça da Mantiquira",
+        "bairro": "Mantiquira",
+        "numero": 200,
+        "cidade": "Duque de Caxias",
+        "telefone": "(21) 5555-5555",
+        "pagamento": [
+            "Dinheiro",
+            "cartao",
+            "pix"
+        ],
+        "delivery": false
+    },
+    {
+        "id": "2",
+        "likes": 7,
+        "deslikes": "2",
+        "nome": "Northy",
+        "categoria": "Lanchonete",
+        "endereço": "Praça da Pedreira",
+        "bairro": "Pedreira",
+        "numero": 300,
+        "cidade": "Duque de Caxias",
+        "telefone": "(21) 5555-5555",
+        "pagamento": [
+            "dinheiro",
+            "cartao"
+        ],
+        "delivery": true
+    },
+    {
+        "id": 3,
+        "likes": 12,
+        "deslikes": 4,
+        "nome": "Japa",
+        "categoria": "Restaurante Japonês",
+        "endereço": "Praça do Ponto Final",
+        "bairro": "Vila do Sase",
+        "cidade": "Duque de Caxias",
+        "telefone": "(21) 8888-8888",
+        "pagamento": [
+            "cartao",
+            "pix",
+            "dinheiro"
+        ],
+        "delivery": true
+    },
+    {
+        "id": 4,
+        "likes": 20,
+        "deslikes": 5,
+        "nome": "BK",
+        "categoria": "Restaurante",
+        "endereço": "Rua de Paula",
+        "bairro": "Pilar",
+        "cidade": "Duque de Caxias",
+        "telefone": "(21) 4141-1313",
+        "pagamento": [
+            "dinheiro",
+            "cartão",
+            "pix"
+        ],
+        "delivery": false
+    }
+  
+]
