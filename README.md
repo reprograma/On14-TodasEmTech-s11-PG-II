@@ -59,21 +59,19 @@ O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRI
                 |
                 |   **app.js**
                 |
-                📂---configs
-                |   **database.js
                 |
                 📂---controller
-                |       comentarioController.js
+                |       
                 |       estabelecimentoController.js
                 |                      
                 📂---model
                 |       
-                |       comentarioSchema.js
-                |       estabelecimentoSchema.js
+                |       
+                |       estabelecimento.js
                 |       
                 |
                 📂---routes
-                |       comentarioRoutes.js
+                |      
                 |       estabelecimentoRoutes.js**
                 |__      
 
@@ -147,9 +145,6 @@ Funcionalidades da aplicação
 
 * local: http://localhost:3000
 
-* MongoDB: [mongodb://localhost:27017/forkids]()
-
-* Heroku: https://forkids-backend.herokuapp.com/
 
 
 #### Retorna teste com apresentação 
@@ -164,9 +159,6 @@ Funcionalidades da aplicação
 
 #### Deleta cadastro do estabelecimento
 - [x] "/estabelecimentos/[ID]" 
-
-#### Enviar um comentario sobre um estabelecimento
-- [x] "/estabelecimentos/[ID]/comentarios" 
 
 
 #### Dar um like em um estabelecimento
@@ -191,10 +183,6 @@ Funcionalidades da aplicação
     "estado": "sp"
 }
 
-#### 👩‍👧‍👦 Comentarios
-{
-    "comentario": "Otimo espaço kids e tem um cardapio adequado para crianças!"
-}
 
 ### 🚧 Projeto em Construção
 
