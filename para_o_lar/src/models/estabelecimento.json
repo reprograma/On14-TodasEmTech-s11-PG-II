@@ -1,9 +1,10 @@
 [
     {
-        "id": 1,
+        "id": "1",
+        "nome": "Império",
+        "cnpj": "44.444.444/4444-44",
         "likes": 6,
-        "deslikes": 3,
-        "nome": "Pizzaria North",
+        "deslikes": 5,
         "categoria": "Restaurante",
         "endereço": "Praça da Mantiquira",
         "bairro": "Mantiquira",
@@ -15,14 +16,16 @@
             "cartao",
             "pix"
         ],
-        "delivery": false
+        "delivery": false,
+        "comentário_opcional": "As comidas são maravilhosas, super saborosas..."
     },
     {
         "id": "2",
-        "likes": 7,
-        "deslikes": "2",
         "nome": "Northy",
-        "categoria": "Lanchonete",
+        "cnpj": "22.222.222/2222-22",
+        "likes": 9,
+        "deslikes": "2",
+        "categoria": "Restaurante",
         "endereço": "Praça da Pedreira",
         "bairro": "Pedreira",
         "numero": 300,
@@ -32,14 +35,16 @@
             "dinheiro",
             "cartao"
         ],
-        "delivery": true
+        "delivery": true,
+        "comentário_opcional": "As comidas são maravilhosa."
     },
     {
-        "id": 3,
-        "likes": 12,
-        "deslikes": 4,
+        "id": "3",
         "nome": "Japa",
-        "categoria": "Restaurante Japonês",
+        "cnpj": "11.111.111/1111-11",
+        "likes": 100,
+        "deslikes": 4,
+        "categoria": "Restaurante",
         "endereço": "Praça do Ponto Final",
         "bairro": "Vila do Sase",
         "cidade": "Duque de Caxias",
@@ -49,24 +54,34 @@
             "pix",
             "dinheiro"
         ],
-        "delivery": true
+        "delivery": true,
+        "comentário_opcional": [
+            "As comidas são maravilhosas, super saborosas...",
+            "Não gostei dos Hossomakis."
+        ]
     },
     {
-        "id": 4,
-        "likes": 20,
-        "deslikes": 5,
+        "id": "4",
         "nome": "BK",
+        "cnpj": "77.777.777/7777-77",
+        "likes": 178,
+        "deslikes": 5,
         "categoria": "Restaurante",
         "endereço": "Rua de Paula",
         "bairro": "Pilar",
         "cidade": "Duque de Caxias",
-        "telefone": "(21) 4141-1313",
+        "telefone": "(xx) xxxx-xxxx",
         "pagamento": [
             "dinheiro",
             "cartão",
             "pix"
         ],
-        "delivery": false
+        "delivery": false,
+        "comentário_opcional": [
+            "Os whopper são deliciosos.",
+            "Os cheddar duplos são muitos secos, precisam colocar mais molhos.",
+            "Os Big King são maravilhosos.",
+            "Esse restaurante deveria ser mais organizado, esperei muito tempo na fila."
+        ]
     }
-  
 ]
