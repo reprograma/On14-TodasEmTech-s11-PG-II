@@ -22,31 +22,31 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
  ## Sumário
 =================
  <!--ts-->
-  * [Objetivos](#Objetivos)
-  * [Aprendizados](#Aprendizados)
- * [Arquitetura Model View Controller](#Arquitetura)
- * [Tecnologias](#Tecnologias)
-    * [Instalação](#Instalação)
-      * [Pré-Requisitos](#Pré-Requisitos)
-      * [Executando a API](#Executando-a-API-(Back-End))
-      * [Features](#features)
+  * [Objetivos](#-Objetivos)
+  * [Aprendizados](#-Aprendizados)
+ * [Arquitetura Model View Controller](#-Arquitetura)
+ * [Tecnologias](#-Tecnologias)
+    * [Instalação](#-Instalação)
+      * [Pré-Requisitos](#-Pré-Requisitos)
+      * [Executando a API](#-Executando-a-API-(back-end))
+      * [Features](#-Features)
 
  <!--te-->
 
 
- ## 🍟 Objetivos 🍟
+ ## Objetivos 
 
  - Cadastros de restaurantes por usuários;
  - Busca de restaurantes por forma de pagamento, por bairro, por delivery e likes;
  - Avaliação dos restaurantes através de likes ou deslikes e comentários dos usuários;
  - Simplificar a busca de restaurantes adequados para levar suas famílias e amigos.
 
- ## 🥗 Aprendizados 🥗
+ ##  Aprendizados 
 
  O projeto guiado consiste em uma API fundamentada no <span style = "color: red; font-weight: bold"> CRUD </span>, que são: <span style = "color: OrangeRed; font-weight: bold">CREATE -- criar </span>, <span style = "color: OrangeRed; font-weight: bold">READ -- ler/consultar </span>, <span style = "color: OrangeRed; font-weight: bold"> UPDATE -- atualizar</span> e <span style = "color: OrangeRed; font-weight: bold"> DELETE -- remover/destruir.
 
 
-## 🍔 Arquitetura 🍔
+##  Arquitetura 
 
     Arquitetura MVC
         |
@@ -83,7 +83,7 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
             |   README.md 
 
       
-## 💻 Tecnologias 💻
+##  Tecnologias 
 
 Para realizar a construção desta API, as seguintes tecnologias foram utilizadas:
 
@@ -95,17 +95,17 @@ Para realizar a construção desta API, as seguintes tecnologias foram utilizada
 - [cors](https://www.npmjs.com/package/cors)
 
    
-## 🍰 Instalação 🍰
+##  Instalação 
 
 * Para realizar download deste projeto, siga as instruções abaixo:
 
-### 🥂 Pré-Requisitos 🥂
+###  Pré-Requisitos 
 
 O usuário precisa ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), o [Postman](https://www.postman.com/downloads/?utm_source=postman-home)
 e o editor de código [VSCode](https://code.visualstudio.com/).
 
-## 🥡 Executando a API (Back-End) 🥡 
+##  Executando a API (Back-End) 
 
 ```bash
 # Abra o git!
@@ -128,7 +128,7 @@ $ npm start
 * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para chamar e testar a API de Restaurantes.
 
    
-## 🍝 Features 🍝
+##  Features 
 
 ### Funcionalidades da API - Restaurantes:
 
