@@ -1,6 +1,7 @@
 <img src="./para_o_lar/assets/banner.jpg" width="100%">
 
 #
+
 <h1 style = "color: gold; font-weight: bold" > API - RESTAURANT REGISTERS 🍜 </h1>
 
 <img src="./para_o_lar/assets/banner2.jpg" width="100%">
@@ -26,7 +27,25 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
 
  <h2 style = "color: gold; font-weight: bold"> 🥗 Aprendizados 🥗</h2>
 
- O projeto guiado consiste em uma API fundamentada no <span style = "color: red; font-weight: bold"> CRUD </span>, que são: <span style = "color: OrangeRed; font-weight: bold">CREATE -- criar </span>, <span style = "color: OrangeRed; font-weight: bold">READ -- ler/consultar </span>, <span style = "color: OrangeRed; font-weight: bold"> UPDATE -- atualizar</span> e <span style = "color: OrangeRed; font-weight: bold"> DELETE -- remover/destruir. 
+ O projeto guiado consiste em uma API fundamentada no <span style = "color: red; font-weight: bold"> CRUD </span>, que são: <span style = "color: OrangeRed; font-weight: bold">CREATE -- criar </span>, <span style = "color: OrangeRed; font-weight: bold">READ -- ler/consultar </span>, <span style = "color: OrangeRed; font-weight: bold"> UPDATE -- atualizar</span> e <span style = "color: OrangeRed; font-weight: bold"> DELETE -- remover/destruir.
+ 
+ 
+ Sumário
+ =================
+
+ <!--ts-->
+  * [Objetivos](#Objetivos);
+  * [Aprendizados](#Aprendizados);
+ * [Arquitetura Model View Controller;](#Arquitetura)
+ * [Tecnologias](#Tecnologias);
+    * [Instalação:](#Instalação)
+      * [Pré-Requisitos;](#Pré-Requisitos)
+      * [Executando a API;](#Executando-a-API-(Back-End))
+      * [Features](#features)
+
+ <!--te-->
+
+
 
 
 <h2 style = "color: gold; font-weight: bold"> 🍔 Arquitetura 🍔</h2>
