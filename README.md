@@ -24,12 +24,12 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
  <!--ts-->
   * [Objetivos](#Objetivos)
   * [Aprendizados](#Aprendizados)
- * [Arquitetura Model View Controller](#-Arquitetura)
- * [Tecnologias](#-Tecnologias)
-    * [Instalação](#-Instalação)
-      * [Pré-Requisitos](#-Pré-Requisitos)
-      * [Executando a API](#-Executando-a-API-(back-end))
-      * [Features](#-Features)
+ * [Arquitetura Model View Controller](#Arquitetura)
+ * [Tecnologias](#Tecnologias)
+    * [Instalação](#Instalação)
+      * [Pré-Requisitos](#Pré-Requisitos)
+      * [Executando a API](#Executando-a-API-(back-end))
+      * [Features](#Features)
 
  <!--te-->
 
