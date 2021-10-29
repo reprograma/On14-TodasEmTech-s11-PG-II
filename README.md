@@ -64,3 +64,63 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
             |   .gitignore
             |   **server.js** 
             |   README.md 
+
+      
+<h2 style = "color: gold; font-weight: bold"> 💻 Tecnologias 💻</h2> 
+
+
+Para realizar a construção desta API, as seguintes tecnologias foram utilizadas:
+
+- [JavaScript](https://www.javascript.com/)
+- [Git/Github](https://github.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Nodemon](https://nodemon.io/)
+- [Express](https://expressjs.com/pt-br/)
+- [cors](https://www.npmjs.com/package/cors)
+
+   
+<h2 style = "color: gold; font-weight: bold"> 🍰 Instalação 🍰</h2> 
+
+* Para realizar download deste projeto, siga as instruções abaixo:
+
+<h4 style = "color: gold;"> 🥂 Pré-Requisitos 🥂</h4> 
+
+
+O usuário precisa ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), o [Postman](https://www.postman.com/downloads/?utm_source=postman-home)
+e o editor de código [VSCode](https://code.visualstudio.com/).
+
+<h2 style = "color: gold; font-weight: bold"> 🥡 Executando a API (Back-End) 🥡 </h2> 
+
+```bash
+# Abra o git!
+# Clone este repositório, desta forma:
+$ git clone <https://github.com/letidesi/On14-TodasEmTech-s11-PG-II.git>
+
+# Acesse a pasta da API no terminal/cmd:
+$ cd para_o_lar
+
+# Instale as dependências necessárias:
+$ npm install
+
+# Execute o servidor:
+$ npm start
+
+# O servidor inciará na porta: 6060 - acesse <localhost:6060>.
+
+```
+
+* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para chamar e testar a API de Restaurantes.
+
+
+   
+<h2 style = "color: gold; font-weight: bold"> 🍝 Features 🍝</h2> 
+
+<h3> Funcionalidades da API - Restaurantes:</h3>
+
+- [x] Cadastros do Restaurante - POST;
+- [x] Like ou deslike - PATCH;
+- [x] Busca - GET;
+- [x] Busca por bairro, pagamento, delivery e likes - GET;
+- [x] Atualizações em todos os campos dos cadastros - PUT;
+- [x] Remover - DELETE.
