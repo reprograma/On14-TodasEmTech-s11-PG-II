@@ -2,13 +2,13 @@
 
 #
 
-<h1 style = "color: gold; font-weight: bold" > API - RESTAURANT REGISTERS 🍜 </h1>
+# API - RESTAURANT REGISTERS 🍜 
 
 <img src="./para_o_lar/assets/banner2.jpg" width="100%">
 
- <h2 style = "color: gold; font-weight: bold"> 🍕 Descrição 🍕</h2>
+ ## 🍕 Descrição 🍕
 
-<h3> API desenvolvida no Projeto Guiado da semana onze, pela bootcamp da <a href="https://reprograma.com.br/">{Reprograma}.</a> <h3>
+### API desenvolvida no Projeto Guiado da semana onze, pela bootcamp da <a href="https://reprograma.com.br/">{Reprograma}.</a> 
 
 > Visto que, o município de Duque de Caxias, não reteriam de nenhum serviço para mostrarem os melhores restaurantes disponíveis nesta área. 
 Com propósito de suprir esta necessidade, foi criada esta API para localizar todos os restaurantes cadastrados do município de Duque de Caxias.
@@ -19,7 +19,7 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
 > Dessa forma, os nossos usuários conseguirão visualizar os restaurantes, cria-los, atualiza-los, remove-los, filtrar por forma de pagamento, bairro, verificar se possui delivery e até buscar por quantidades de likes.
 
 
- # Sumário
+ ## Sumário
 =================
  <!--ts-->
   * [Objetivos](#Objetivos)
@@ -34,19 +34,19 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
  <!--te-->
 
 
- <h2 style = "color: gold; font-weight: bold"> 🍟 Objetivos 🍟</h2>
+ ## 🍟 Objetivos 🍟
 
  - Cadastros de restaurantes por usuários;
  - Busca de restaurantes por forma de pagamento, por bairro, por delivery e likes;
  - Avaliação dos restaurantes através de likes ou deslikes e comentários dos usuários;
  - Simplificar a busca de restaurantes adequados para levar suas famílias e amigos.
 
- <h2 style = "color: gold; font-weight: bold"> 🥗 Aprendizados 🥗</h2>
+ ## 🥗 Aprendizados 🥗
 
  O projeto guiado consiste em uma API fundamentada no <span style = "color: red; font-weight: bold"> CRUD </span>, que são: <span style = "color: OrangeRed; font-weight: bold">CREATE -- criar </span>, <span style = "color: OrangeRed; font-weight: bold">READ -- ler/consultar </span>, <span style = "color: OrangeRed; font-weight: bold"> UPDATE -- atualizar</span> e <span style = "color: OrangeRed; font-weight: bold"> DELETE -- remover/destruir.
 
 
-<h2 style = "color: gold; font-weight: bold"> 🍔 Arquitetura 🍔</h2>
+## 🍔 Arquitetura 🍔
 
     Arquitetura MVC
         |
@@ -83,8 +83,7 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
             |   README.md 
 
       
-<h2 style = "color: gold; font-weight: bold"> 💻 Tecnologias 💻</h2> 
-
+## 💻 Tecnologias 💻
 
 Para realizar a construção desta API, as seguintes tecnologias foram utilizadas:
 
@@ -96,18 +95,17 @@ Para realizar a construção desta API, as seguintes tecnologias foram utilizada
 - [cors](https://www.npmjs.com/package/cors)
 
    
-<h2 style = "color: gold; font-weight: bold"> 🍰 Instalação 🍰</h2> 
+## 🍰 Instalação 🍰
 
 * Para realizar download deste projeto, siga as instruções abaixo:
 
-<h4 style = "color: gold;"> 🥂 Pré-Requisitos 🥂</h4> 
-
+### 🥂 Pré-Requisitos 🥂
 
 O usuário precisa ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), o [Postman](https://www.postman.com/downloads/?utm_source=postman-home)
 e o editor de código [VSCode](https://code.visualstudio.com/).
 
-<h2 style = "color: gold; font-weight: bold"> 🥡 Executando a API (Back-End) 🥡 </h2> 
+## 🥡 Executando a API (Back-End) 🥡 
 
 ```bash
 # Abra o git!
@@ -129,11 +127,10 @@ $ npm start
 
 * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para chamar e testar a API de Restaurantes.
 
-
    
-<h2 style = "color: gold; font-weight: bold"> 🍝 Features 🍝</h2> 
+## 🍝 Features 🍝
 
-<h3> Funcionalidades da API - Restaurantes:</h3>
+### Funcionalidades da API - Restaurantes:
 
 - [x] Cadastros do Restaurante - POST;
 - [x] Like ou deslike - PATCH;
