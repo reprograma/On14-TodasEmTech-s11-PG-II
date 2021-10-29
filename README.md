@@ -30,38 +30,37 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
 
 
 <h2 style = "color: gold; font-weight: bold"> 🍔 Arquitetura 🍔</h2>
- 
-  Arquitetura MVC
+
+    Arquitetura MVC
         |
         \--📂  para_o_lar
-             \--📂 assets
-             \--📂 node_modules
-             \--📂src
-                |
-                |   **app.js**
-                |
+            |      
+            |  
+            \--📂 node_modules
+            \--📂 assets
+            \--📂src
                 |
                 📂---controllers
-                |       
                 |       estabelecimentoController.js
-                |     
-                |                 
+                |       
+                |                      
                 📂---models
-                |  
-                |     
-                estabelecimento.json
+                |       
+                |       estabelecimento.json
                 |       
                 |       
                 |
                 📂---routes
-                |   
-                |    
-                estabelecimento.js
+                |       estabelecimento.js
+                |
+                |
+                |   **app.js**
+                |
+                |
                 |       
-                |_______      
+                |______  
             |   package-lock.json
-            |   package.json
-            |   **server.js**
+            |   package.json 
             |   .gitignore
-            |   README.md  
-           
+            |   **server.js** 
+            |   README.md 
