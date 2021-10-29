@@ -215,7 +215,6 @@ const create = (request, response) => {
       },
       "*  Seu restaurante deverá estar localizado em Duque de Caxias;",
       "*  O nome do seu restaurante deverá ser menor ou igual à 15 caracteres;",
-      "* O comentário deverá ser menor ou igual à 100 caracteres. ",
       {
         example_messages: "Exemplos de como inserir os seguintes campos:",
       },

@@ -1,2 +1,2 @@
-# On14-TodasEmTech-s10-PG-II
-Turma Online 14 - Back-end | Projeto Guiado II
+<img src="./assets/banner.jpg" width="100%">
+
