@@ -122,40 +122,64 @@ const atualizar = (req, res) => {
   if (foundRestaurant == undefined) {
     res.status(404).send([{ message: "Este restaurante não foi encontrado." }]);
   }
+  if (body.nome.length > 15) {
+    res
+      .status(406)
+      .json([
+        {
+          message:
+            "O nome do restaurante deverá ser menor ou igual à 15 caracteres.",
+        },
+      ]);
+  }
 
+  if (body.cnpj.length > 19 || body.cnpj.length < 19) {
+    res
+      .status(406)
+      .json([
+        {
+          message:
+            "O CNPJ deverá ser preenchido como neste exemplo: xx.xxx.xxx/xxxx-xx .",
+        },
+      ]);
+  }
+
+  if (body.categoria != "Restaurante") {
+    res
+      .status(406)
+      .json([
+        {
+          message:
+            "Para atualizar, a categoria deverá estar como 'Restaurante.'",
+        },
+      ]);
+  }
+
+  if (body.telefone.length > 15 || body.telefone.length < 14) {
+    res
+      .status(406)
+      .json([
+        {
+          message:
+            "Para atualizar, o telefone deverá estar como neste exemplo: (xx) xxxx-xxxx .",
+        },
+      ]);
+  }
+
+  if (body.pagamento.length === 0 || body.pagamento == "") {
+    res
+      .status(406)
+      .json([
+        {
+          message:
+            "Para atualizar, informe como você deseja pagar. Aceitamos: Cartão, Dinheiro e Pix. ",
+        },
+      ]);
+  }
   body.id = id;
   Object.keys(foundRestaurant).forEach((keys) => {
-    console.log(body.categoria);
     if (!body[keys]) {
       foundRestaurant[keys] = foundRestaurant[keys];
-    } else if (body.nome.length >= 16) {
-      res
-        .status(406)
-        .send([
-          {
-            message:
-              "Para atualizar, o nome deverá ser menor ou igual à 15 caracteres.",
-          },
-        ]);
-    } else if (body.cnpj.length > 18) {
-      res
-        .status(406)
-        .send([
-          {
-            message:
-              "Para atualizar, o CNPJ deverá ser preenchido como neste exemplo: xx.xxx.xxx/xxxx-xx .",
-          },
-        ]);
-    } else if (body.cnpj.length < 18) {
-      foundRestaurant.cnpj = foundRestaurant.cnpj;
-    } else if (body.cnpj.length == 18) {
-      foundRestaurant.cnpj = body.cnpj;
-    } else if (body.cep.length != 9) {
-      foundRestaurant.cep = foundRestaurant.cep;
-    } else if (body.cep.length == 9) {
-      foundRestaurant.cep = body.cep;
-    } else if (body.municipio != "Duque de Caxias") {
-      foundRestaurant.municipio = foundRestaurant.municipio;
     } else {
       foundRestaurant[keys] = body[keys];
     }
@@ -183,7 +207,7 @@ const create = (request, response) => {
     endereço: bodyReq.endereço,
     bairro: bodyReq.bairro,
     numero: bodyReq.numero,
-    CEP: bodyReq.cep,
+    cep: bodyReq.cep,
     municipio: bodyReq.municipio,
     telefone: bodyReq.telefone,
     pagamento: bodyReq.pagamento,
@@ -202,6 +226,7 @@ const create = (request, response) => {
     !bodyReq.cep ||
     !bodyReq.municipio ||
     bodyReq.pagamento.length === 0 ||
+    body.pagamento == "" ||
     bodyReq.delivery === ""
   ) {
     response.status(406).json([
