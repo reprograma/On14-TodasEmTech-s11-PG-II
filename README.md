@@ -34,7 +34,7 @@ Com isso, podemos compartilhar nossas experiências, ajudar com os feedback, ver
  <!--te-->
 
 
- ## Objetivos
+ ##  Objetivos 
 
  - Cadastros de restaurantes por usuários;
  - Busca de restaurantes por forma de pagamento, por bairro, por delivery e likes;

@@ -45,7 +45,7 @@ const getAll = (request, response) => {
       return estab.likes == likes;
     });
   }
-  response.status(200).send(filtrados);
+  response.status(200).send(filtered);
 };
 
 const getById = (request, response) => {
@@ -125,8 +125,37 @@ const atualizar = (req, res) => {
 
   body.id = id;
   Object.keys(foundRestaurant).forEach((keys) => {
+    console.log(body.categoria);
     if (!body[keys]) {
       foundRestaurant[keys] = foundRestaurant[keys];
+    } else if (body.nome.length >= 16) {
+      res
+        .status(406)
+        .send([
+          {
+            message:
+              "Para atualizar, o nome deverá ser menor ou igual à 15 caracteres.",
+          },
+        ]);
+    } else if (body.cnpj.length > 18) {
+      res
+        .status(406)
+        .send([
+          {
+            message:
+              "Para atualizar, o CNPJ deverá ser preenchido como neste exemplo: xx.xxx.xxx/xxxx-xx .",
+          },
+        ]);
+    } else if (body.cnpj.length < 18) {
+      foundRestaurant.cnpj = foundRestaurant.cnpj;
+    } else if (body.cnpj.length == 18) {
+      foundRestaurant.cnpj = body.cnpj;
+    } else if (body.cep.length != 9) {
+      foundRestaurant.cep = foundRestaurant.cep;
+    } else if (body.cep.length == 9) {
+      foundRestaurant.cep = body.cep;
+    } else if (body.municipio != "Duque de Caxias") {
+      foundRestaurant.municipio = foundRestaurant.municipio;
     } else {
       foundRestaurant[keys] = body[keys];
     }
@@ -135,6 +164,7 @@ const atualizar = (req, res) => {
   res.status(200).send([
     {
       message: `O restaurante ${foundRestaurant.nome} atualizado com sucesso.`,
+      foundRestaurant,
     },
   ]);
 
@@ -152,7 +182,9 @@ const create = (request, response) => {
     categoria: bodyReq.categoria,
     endereço: bodyReq.endereço,
     bairro: bodyReq.bairro,
-    cidade: bodyReq.cidade,
+    numero: bodyReq.numero,
+    CEP: bodyReq.cep,
+    municipio: bodyReq.municipio,
     telefone: bodyReq.telefone,
     pagamento: bodyReq.pagamento,
     delivery: bodyReq.delivery,
@@ -167,11 +199,12 @@ const create = (request, response) => {
     !bodyReq.endereço ||
     !bodyReq.categoria ||
     !bodyReq.bairro ||
-    !bodyReq.cidade ||
+    !bodyReq.cep ||
+    !bodyReq.municipio ||
     bodyReq.pagamento.length === 0 ||
     bodyReq.delivery === ""
   ) {
-    response.status(201).json([
+    response.status(406).json([
       {
         message:
           "É obrigatório informar os seguintes campos para cadastrar seu restaurante:",
@@ -183,16 +216,18 @@ const create = (request, response) => {
       "* Endereço;",
       "* Categoria;",
       "* Bairro;",
-      "* Cidade;",
+      "*CEP;",
+      "* Município;",
       "* Pagamento;",
       "* Delivery.",
     ]);
   } else if (
-    bodyReq.cidade === "Duque de Caxias" &&
+    bodyReq.municipio === "Duque de Caxias" &&
     bodyReq.categoria === "Restaurante" &&
     bodyReq.telefone.length == 14 &&
     bodyReq.nome.length <= 15 &&
-    bodyReq.cnpj.length == 19
+    bodyReq.cnpj.length == 19 &&
+    bodyReq.cep.length == 9
   ) {
     models.push(estab);
 
@@ -203,17 +238,18 @@ const create = (request, response) => {
       },
     ]);
   } else {
-    response.status(201).json([
+    response.status(406).json([
       {
         main_message:
-          "É OBRIGATÓRIO SER RESTAURANTES PARA REALIZAR O CADASTRO!",
+          "É OBRIGATÓRIO O ESTABLECIMENTO SER UM RESTAURANTE PARA REALIZAR O CADASTRO!",
         message: "OBS: LEIA OS TERMOS ABAIXO COM ATENÇÃO!",
       },
       {
         messaging_rules:
           "É obrigatório realizar as regras abaixo para cadastrar seu restaurante:",
       },
-      "*  Seu restaurante deverá estar localizado em Duque de Caxias;",
+      "* Informe um CEP válido.",
+      "*  Seu restaurante deverá estar localizado no município de Duque de Caxias;",
       "*  O nome do seu restaurante deverá ser menor ou igual à 15 caracteres;",
       {
         example_messages: "Exemplos de como inserir os seguintes campos:",
