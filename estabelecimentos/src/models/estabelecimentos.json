@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "likes": 12,
+        "deslikes": 4,
+        "avaliacoes": "",
+        "nome": "Andorinha Hiper Center",
+        "categoria": "Hipermercado",
+        "endereco": "Av. Parada Pinto",
+        "numero": 2262,
+        "bairro": "Lauzane Paulista",
+        "cidade": "São Paulo",
+        "cep": "02611-001",
+        "telefone": "11 2233-9999",
+        "pagamento": [
+            "dinheiro, cartao, pix, cheque"
+        ],
+        "delivery": false
+    },
+    {
+        "id": 2,
+        "likes": 3,
+        "deslikes": 0,
+        "avaliacoes": "",
+        "nome": "Armazém Sabor em Grãos",
+        "categoria": "Produtos Naturais",
+        "endereco": "Av. Imirim",
+        "numero": 1693,
+        "bairro": "Santana",
+        "cidade": "São Paulo",
+        "cep": "02465-200",
+        "telefone": "11 3807-8001",
+        "pagamento": [
+            "dinheiro, cartao"
+        ],
+        "delivery": false
+    },
+    {
+        "id": 4,
+        "likes": 3,
+        "deslikes": 3,
+        "avaliacoes": "",
+        "nome": "Makro Atacadista - Vila Maria",
+        "categoria": "Atacadista",
+        "endereco": "Av. Morvan Dias de Figueiredo",
+        "numero": 3231,
+        "bairro": "Vila Guilherme",
+        "cidade": "São Paulo",
+        "cep": "02063-901",
+        "telefone": "11 2902-4500",
+        "pagamento": [
+            "dinheiro, cartao"
+        ],
+        "delivery": true
+    },
+    {
+        "id": 4,
+        "likes": 0,
+        "deslikes": 0,
+        "avaliacoes": "",
+        "nome": "Bio Alternativa Restaurante",
+        "categoria": "Restaurante",
+        "endereco": "Rua Maranhão",
+        "numero": 812,
+        "bairro": "Higienópolis",
+        "cidade": "São Paulo",
+        "cep": "01240-000",
+        "telefone": "11 3825-8499",
+        "pagamento": [
+            "dinheiro, cartao",
+            "pix"
+        ],
+        "delivery": true
+    },
+    {
+        "id": 5,
+        "likes": 0,
+        "deslikes": 0,
+        "avaliacoes": "",
+        "nome": "Amigo do Rei",
+        "categoria": "Restaurante",
+        "endereco": "Rua das Orquídeas",
+        "numero": 535,
+        "bairro": "Moema",
+        "cidade": "São Paulo",
+        "cep": "04050-000",
+        "telefone": "11 98243 3956",
+        "pagamento": [
+            "dinheiro, cartao",
+            "pix"
+        ],
+        "delivery": true
+    },
+    {
+        "id": 6,
+        "likes": 0,
+        "deslikes": 0,
+        "avaliacoes": "",
+        "nome": "Sorveteria Soroko",
+        "categoria": "Sorveteria",
+        "endereco": "Rua Augusta",
+        "numero": 305,
+        "bairro": "Consolação",
+        "cidade": "São Paulo",
+        "cep": "01305-000",
+        "telefone": "11 3258-8939",
+        "pagamento": [
+            "dinheiro, cartao",
+            "pix"
+        ],
+        "delivery": false
+    }
+]
