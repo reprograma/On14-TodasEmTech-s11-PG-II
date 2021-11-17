@@ -1,4 +1,4 @@
-const models = require("../models/estabelecimentos.json");
+const models = require("../models/estabelecimentos.json"); 
 
 const getAll = (request, response) => {
 

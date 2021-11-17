@@ -1,5 +1,5 @@
 const express = require("express")
-const controller = require("../controllers/estabelecimentosController")
+const controller = require("../controllers/estabelecimentoController")
 
 const router = express.Router()
 
@@ -16,8 +16,5 @@ router.patch("/updatedeslike/:id", controller.updateDeslike)
 router.put("/atualizar/:id", controller.atualizarEstabelecimento)
 
 router.delete("/deletar/:id", controller.deletarEstabelecimento)
-
-
-router.post("/cadastro", controller.createId)
 
 module.exports = router
