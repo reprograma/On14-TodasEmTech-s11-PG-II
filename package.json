@@ -1,0 +1,25 @@
+{
+  "name": "on14-todasemtech-s11-pg-ii",
+  "version": "1.0.0",
+  "description": "<img src=\"./assets/turismo.png\" width=\"100%\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samgrs/On14-TodasEmTech-s11-PG-II.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samgrs/On14-TodasEmTech-s11-PG-II/issues"
+  },
+  "homepage": "https://github.com/samgrs/On14-TodasEmTech-s11-PG-II#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}

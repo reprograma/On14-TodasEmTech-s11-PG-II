@@ -1,17 +1,13 @@
-<img src="./assets/inicio.png" width="100%">
-<img src="./assets/meio.jpg" width="100%">
+<img src="./assets/turismo.png" width="100%">
 
 
-# API - FORKIDS
-## 🚀 Descrição
+# API - Turismo Cultural Nordeste
+## 🚀 API para otimizar a disseminação da cultura pelo nordeste
 
 
+   >Projeto Guiado Semana 11, Reprograma.<br>
 
-
-   >Como mãe de duas crianças pequenas passei por varios infortunio, como trocar a fralda do meu filho em uma mesa porque o estabelecimento nao tinha fraldario ou um simples trocador no banheiro, ou ficar horas rodando de carro para encontrar um restaurante com espaço kids.<br>
-
-   >
-   >Para minizar esse sofrimento nasce a FORKIDS uma plataforma onde pais e mães cadastram estabelecimentos (restaurantes, cinema, hotel, cabeleireiro) etc que são adequados para levar as crianças, afinal nada pior do que chegar em um lugar e não encontrar nem uma cadeirinha para colocar o pequeno ou um cardapio adequado para crianças. De pais para pais essa é a essencia do FORKIDS
+   >Destinos culturais na cidade de João Pessoa-PB.<br>
 
 
 # Sumário
@@ -46,7 +42,7 @@ O projeto final consiste em uma API fundamentada no CRUD, que são:  CREATE (CRI
 
         Arquitetura MVC
         |
-        \--📂  FORKIDS
+        \--📂  para_o_lar
             |   README.md  
             |   .env
             |   .gitignore
@@ -145,61 +141,3 @@ Funcionalidades da aplicação
 
 * local: http://localhost:3000
 
-
-
-#### Retorna teste com apresentação 
-{ mensagem: O app está rodando em http://localhost:3000 }
-- [x] "/estabelecimentos" 
-
-#### Cria novo cadastro de estabelecimento
-- [x] "/estabelecimentos" 
-
-#### Retorna estabelecimento por um id específico
-- [x] "/:Id" 
-
-#### Deleta cadastro do estabelecimento
-- [x] "/estabelecimentos/[ID]" 
-
-
-#### Dar um like em um estabelecimento
-- [x] "/estabelecimentos/[ID]/like" 
-
-#### Atualiza o cadastro de um estabelecimento (id não pode ser modificado)
-- [x] "/estabelecimento/[ID]"
-
-
-## ✅Modelo com campos obrigatórios para teste
-
-### 👩‍👧‍👦 Estabelecimentos
-
-{
-    "nome": "Bar do Juarez", 
-    "site": "http://www.estabelecimento1.com.br",
-    "categoria": "restaurante",
-    "logradouro": "Rua Hum",
-    "numero": 2,
-    "bairro": "centro",
-    "cidade": "Jundiaí",
-    "estado": "sp"
-}
-
-
-### 🚧 Projeto em Construção
-
-        Autenticação
-        Sistema de Login
-        Ranking
-        
-
-
-# Agradecimentos
-
-<p align="justify">Aos 36 anos, depois de trabalhar por 16 anos em RH decidi que era hora de mudar de carreira. 
-Me organizei e fiz um bom planejamento financeiro, mas nem todo planejamento poderia me preparar para esse caminho dificil e algumas vezes doloroso.
-Mesmo ouvindo que eu era velha demais ou que por ser Psicologa eu não seria capaz de programar, eu nao desisti e no caminho encontrei a REPROGRAMA e a CLOUD GIRLS.
-Mulheres maravilhosas que acreditaram em mim quando eu nao acreditei. Rainhas guerreiras que conseguem equilibrar familia, estudo e trabalho.
-Entao eu quero agradecer a cada mulher que conheci na turma ON6-XP, a CECI que sempre ilumina os nossos dias a Jô pela oportunidade de mudar a minha vida e cada mentora e monitora que doaram o que existe de mais valioso "tempo".<br>
-Um agradecimento especial ao meu marido Henrique Marti por ser meu porto seguro, minha inspiração e meu parceiro de vida, e ao meus filhos que tiveram paciencia (quando eu nao tinha). <br>
-E ao Cloud Girls (Juh e Danilo) que abriu as portas da mudança e me permitiu voar bem alto.<br>
-
-E lembre-se programar é ERRAR, ERRAR, ERRAR e ACERTAR e não esqueça de ser divertir!</p>
